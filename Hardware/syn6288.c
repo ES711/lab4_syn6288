@@ -20,7 +20,7 @@ void SYN_FrameInfo(uint8_t music, uint8_t *data)
 	0x01 -> GBK
 	0x02 -> BIG5
 	*/
-	frame[4] = 0x01 | music << 4;
+	frame[4] = 0x02 | music << 4;
 	
 	//ecc calculate
 	for(int i = 0;i<5;i++)
